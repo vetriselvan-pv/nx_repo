@@ -45,12 +45,13 @@
   },
   "husky":{
     "hooks":{
-      "pre-commit": "lint-staged"
+      "pre-commit": "npm run prettier --staged && ng lint && npm test"
     }
   },
   "lint-staged": {
     "*.{js,json,css,scss,md,ts,html,graphql}": [
       "yarn format --uncommitted"
     ]
-  }
+  },
+  "prettier": "prettier --write src/**/*.{ts,js,css,html}"
 }
