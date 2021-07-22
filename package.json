@@ -36,8 +36,22 @@
     "@nrwl/workspace": "12.5.8",
     "@types/node": "14.14.33",
     "dotenv": "8.2.0",
+    "husky": "^7.0.1",
+    "jest": "^27.0.6",
+    "lint-staged": "^11.0.1",
     "prettier": "^2.3.1",
     "ts-node": "~9.1.1",
     "typescript": "~4.2.4"
-  }
+  },
+  "husky":{
+    "hooks":{
+      "pre-commit": "npm run prettier --staged && ng lint && npm test"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css,scss,md,ts,html,graphql}": [
+      "yarn format --uncommitted"
+    ]
+  },
+  "prettier": "prettier --write src/**/*.{ts,js,css,html}"
 }
