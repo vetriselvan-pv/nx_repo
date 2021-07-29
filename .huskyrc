@@ -1,0 +1,7 @@
+{
+  "hooks": {
+        "commit-msg": "commitlint --config commitlint.config.js -E HUSKY_GIT_PARAMS",
+        "pre-commit": "lint-staged && echo \"[Husky] pre-commit\"",
+        "post-merge": "echo 'Make sure you do npm i for new package updates'",
+  }
+}
