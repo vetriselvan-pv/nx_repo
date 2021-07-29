@@ -2,10 +2,6 @@
 
 # Pvs
 
-This project was generated using [Nx](https://nx.dev).
-
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
-
 🔎 **Smart, Extensible Build Framework**
 
 ## Adding capabilities to your workspace
@@ -92,3 +88,34 @@ Nx Cloud pairs with Nx in order to enable you to build and test code more rapidl
 Teams using Nx gain the advantage of building full-stack applications with their preferred framework alongside Nx’s advanced code generation and project dependency graph, plus a unified experience for both frontend and backend developers.    
 
 Visit [Nx Cloud](https://nx.app/) to learn more.
+
+
+### GIT HOOKS  
+
+"applypatch-msg": "echo \"[Husky] applypatch-msg\"",
+        "pre-applypatch": "echo \"[Husky] pre-applypatch\"",
+        "post-applypatch": "echo \"[Husky] post-applypatch\"",
+        "pre-commit": "echo \"[Husky] pre-commit\"",
+        "pre-merge-commit": "echo \"[Husky] pre-merge-commit\"",
+        "prepare-commit-msg": "echo \"[Husky] prepare-commit-msg\"",
+        "commit-msg": "echo \"[Husky] commit-msg\"",
+        "post-commit": "echo \"[Husky] post-commit\"",
+        "pre-rebase": "echo \"[Husky] pre-rebase\"",
+        "post-checkout": "echo \"[Husky] post-checkout\"",
+        "post-merge": "echo \"[Husky] post-merge\"",
+        "pre-push": "echo \"[Husky] pre-push\"",
+        "pre-receive": "echo \"[Husky] pre-receive\"",
+        "update": "echo \"[Husky] update\"",
+        "post-receive": "echo \"[Husky] post-receive\"",
+        "post-update": "echo \"[Husky] post-update\"",
+        "reference-transaction": "echo \"[Husky] reference-transaction\"",
+        "push-to-checkout": "echo \"[Husky] push-to-checkout\"",
+        "pre-auto-gc": "echo \"[Husky] pre-auto-gc\"",
+        "post-rewrite": "echo \"[Husky] post-rewrite\"",
+        "sendemail-validate": "echo \"[Husky] sendemail-validate\"",
+        "fsmonitor-watchman": "echo \"[Husky] fsmonitor-watchman\"",
+        "p4-changelist": "echo \"[Husky] p4-changelist\"",
+        "p4-prepare-changelist": "echo \"[Husky] p4-prepare-changelist\"",
+        "p4-post-changelist": "echo \"[Husky] p4-post-changelist\"",
+        "p4-pre-submit": "echo \"[Husky] p4-pre-submit\"",
+        "post-index-change": "echo \"[Husky] post-index-change\""
