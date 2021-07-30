@@ -1,5 +1,3 @@
-
-
 # Pvs
 
 🔎 **Smart, Extensible Build Framework**
@@ -15,9 +13,9 @@ Below are our core plugins:
 - [React](https://reactjs.org)
   - `npm install --save-dev @nrwl/react`
 - Web (no framework frontends)
+
   - `npm install --save-dev @nrwl/web`
-- [Angular](https://angular.io) 
-  - `npm install --save-dev @nrwl/angular`
+
 - [Nest](https://nestjs.com)
   - `npm install --save-dev @nrwl/nest`
 - [Express](https://expressjs.com)
@@ -75,47 +73,32 @@ Run `nx dep-graph` to see a diagram of the dependencies of your projects.
 
 Visit the [Nx Documentation](https://nx.dev) to learn more.
 
-
-
-## ☁ Nx Cloud
-
-### Distributed Computation Caching & Distributed Task Execution
-
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-cloud-card.png"></p>
-
-Nx Cloud pairs with Nx in order to enable you to build and test code more rapidly, by up to 10 times. Even teams that are new to Nx can connect to Nx Cloud and start saving time instantly.
-
-Teams using Nx gain the advantage of building full-stack applications with their preferred framework alongside Nx’s advanced code generation and project dependency graph, plus a unified experience for both frontend and backend developers.    
-
-Visit [Nx Cloud](https://nx.app/) to learn more.
-
-
-### GIT HOOKS  
+### GIT HOOKS
 
 "applypatch-msg": "echo \"[Husky] applypatch-msg\"",
-        "pre-applypatch": "echo \"[Husky] pre-applypatch\"",
-        "post-applypatch": "echo \"[Husky] post-applypatch\"",
-        "pre-commit": "echo \"[Husky] pre-commit\"",
-        "pre-merge-commit": "echo \"[Husky] pre-merge-commit\"",
-        "prepare-commit-msg": "echo \"[Husky] prepare-commit-msg\"",
-        "commit-msg": "echo \"[Husky] commit-msg\"",
-        "post-commit": "echo \"[Husky] post-commit\"",
-        "pre-rebase": "echo \"[Husky] pre-rebase\"",
-        "post-checkout": "echo \"[Husky] post-checkout\"",
-        "post-merge": "echo \"[Husky] post-merge\"",
-        "pre-push": "echo \"[Husky] pre-push\"",
-        "pre-receive": "echo \"[Husky] pre-receive\"",
-        "update": "echo \"[Husky] update\"",
-        "post-receive": "echo \"[Husky] post-receive\"",
-        "post-update": "echo \"[Husky] post-update\"",
-        "reference-transaction": "echo \"[Husky] reference-transaction\"",
-        "push-to-checkout": "echo \"[Husky] push-to-checkout\"",
-        "pre-auto-gc": "echo \"[Husky] pre-auto-gc\"",
-        "post-rewrite": "echo \"[Husky] post-rewrite\"",
-        "sendemail-validate": "echo \"[Husky] sendemail-validate\"",
-        "fsmonitor-watchman": "echo \"[Husky] fsmonitor-watchman\"",
-        "p4-changelist": "echo \"[Husky] p4-changelist\"",
-        "p4-prepare-changelist": "echo \"[Husky] p4-prepare-changelist\"",
-        "p4-post-changelist": "echo \"[Husky] p4-post-changelist\"",
-        "p4-pre-submit": "echo \"[Husky] p4-pre-submit\"",
-        "post-index-change": "echo \"[Husky] post-index-change\""
+"pre-applypatch": "echo \"[Husky] pre-applypatch\"",
+"post-applypatch": "echo \"[Husky] post-applypatch\"",
+"pre-commit": "echo \"[Husky] pre-commit\"",
+"pre-merge-commit": "echo \"[Husky] pre-merge-commit\"",
+"prepare-commit-msg": "echo \"[Husky] prepare-commit-msg\"",
+"commit-msg": "echo \"[Husky] commit-msg\"",
+"post-commit": "echo \"[Husky] post-commit\"",
+"pre-rebase": "echo \"[Husky] pre-rebase\"",
+"post-checkout": "echo \"[Husky] post-checkout\"",
+"post-merge": "echo \"[Husky] post-merge\"",
+"pre-push": "echo \"[Husky] pre-push\"",
+"pre-receive": "echo \"[Husky] pre-receive\"",
+"update": "echo \"[Husky] update\"",
+"post-receive": "echo \"[Husky] post-receive\"",
+"post-update": "echo \"[Husky] post-update\"",
+"reference-transaction": "echo \"[Husky] reference-transaction\"",
+"push-to-checkout": "echo \"[Husky] push-to-checkout\"",
+"pre-auto-gc": "echo \"[Husky] pre-auto-gc\"",
+"post-rewrite": "echo \"[Husky] post-rewrite\"",
+"sendemail-validate": "echo \"[Husky] sendemail-validate\"",
+"fsmonitor-watchman": "echo \"[Husky] fsmonitor-watchman\"",
+"p4-changelist": "echo \"[Husky] p4-changelist\"",
+"p4-prepare-changelist": "echo \"[Husky] p4-prepare-changelist\"",
+"p4-post-changelist": "echo \"[Husky] p4-post-changelist\"",
+"p4-pre-submit": "echo \"[Husky] p4-pre-submit\"",
+"post-index-change": "echo \"[Husky] post-index-change\""

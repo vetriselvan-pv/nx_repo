@@ -36,6 +36,16 @@
     "mobile/ionic-angular-e2e": {
       "tags": [],
       "implicitDependencies": ["mobile-ionic-angular"]
+    },
+    "web-angular": {
+      "tags": []
+    },
+    "web-angular-shared-component": {
+      "tags": []
+    },
+    "web/angular-e2e": {
+      "tags": [],
+      "implicitDependencies": ["web-angular"]
     }
   }
 }
