@@ -10,8 +10,7 @@ These capabilities include generating applications, libraries, etc as well as th
 
 Below are our core plugins:
 
-- [React](https://reactjs.org)
-  - `npm install --save-dev @nrwl/react`
+-
 - Web (no framework frontends)
 
   - `npm install --save-dev @nrwl/web`
