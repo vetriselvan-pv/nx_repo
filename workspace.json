@@ -404,6 +404,84 @@
         }
       }
     },
+    "web-vue": {
+      "projectType": "application",
+      "root": "apps/web/vue",
+      "sourceRoot": "apps/web/vue/src",
+      "targets": {
+        "build": {
+          "executor": "@nx-plus/vue:browser",
+          "options": {
+            "dest": "dist/apps/web/vue",
+            "index": "apps/web/vue/public/index.html",
+            "main": "apps/web/vue/src/main.ts",
+            "tsConfig": "apps/web/vue/tsconfig.app.json"
+          },
+          "configurations": {
+            "production": {
+              "mode": "production",
+              "filenameHashing": true,
+              "productionSourceMap": true,
+              "css": {
+                "extract": true,
+                "sourceMap": false
+              }
+            }
+          }
+        },
+        "serve": {
+          "executor": "@nx-plus/vue:dev-server",
+          "options": {
+            "browserTarget": "web-vue:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "web-vue:build:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/web/vue/**/*.{ts,tsx,vue}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/web/vue"],
+          "options": {
+            "jestConfig": "apps/web/vue/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "web-vue-e2e": {
+      "root": "apps/web/vue-e2e",
+      "sourceRoot": "apps/web/vue-e2e/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/web/vue-e2e/cypress.json",
+            "tsConfig": "apps/web/vue-e2e/tsconfig.e2e.json",
+            "devServerTarget": "web-vue:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "web-vue:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/web/vue-e2e/**/*.{js,ts}"]
+          }
+        }
+      }
+    },
     "web/angular-e2e": {
       "root": "apps/web/angular-e2e",
       "sourceRoot": "apps/web/angular-e2e/src",

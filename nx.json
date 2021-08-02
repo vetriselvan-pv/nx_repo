@@ -46,6 +46,13 @@
     "web-react": {
       "tags": []
     },
+    "web-vue": {
+      "tags": []
+    },
+    "web-vue-e2e": {
+      "tags": [],
+      "implicitDependencies": ["web-vue"]
+    },
     "web/angular-e2e": {
       "tags": [],
       "implicitDependencies": ["web-angular"]
