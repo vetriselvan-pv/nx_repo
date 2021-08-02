@@ -43,9 +43,16 @@
     "web-angular-shared-component": {
       "tags": []
     },
+    "web-react": {
+      "tags": []
+    },
     "web/angular-e2e": {
       "tags": [],
       "implicitDependencies": ["web-angular"]
+    },
+    "web/react-e2e": {
+      "tags": [],
+      "implicitDependencies": ["web-react"]
     }
   }
 }
