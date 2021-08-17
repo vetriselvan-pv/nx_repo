@@ -17,6 +17,9 @@
     "paths": {
       "@pvs/web/angular/shared/component": [
         "libs/web/angular/shared/component/src/index.ts"
+      ],
+      "@pvs/web/angular/shared/directive": [
+        "libs/web/angular/shared/directive/src/index.ts"
       ]
     }
   },

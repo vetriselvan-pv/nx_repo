@@ -5,5 +5,6 @@ module.exports = {
     '<rootDir>/libs/web/angular/shared/component',
     '<rootDir>/apps/web/react',
     '<rootDir>/apps/web/vue',
+    '<rootDir>/libs/web/angular/shared/directive',
   ],
 }
