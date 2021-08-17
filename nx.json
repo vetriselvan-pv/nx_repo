@@ -43,6 +43,9 @@
     "web-angular-shared-component": {
       "tags": []
     },
+    "web-angular-shared-directive": {
+      "tags": []
+    },
     "web-react": {
       "tags": []
     },

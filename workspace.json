@@ -328,6 +328,31 @@
         }
       }
     },
+    "web-angular-shared-directive": {
+      "projectType": "library",
+      "root": "libs/web/angular/shared/directive",
+      "sourceRoot": "libs/web/angular/shared/directive/src",
+      "prefix": "pvs",
+      "targets": {
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/web/angular/shared/directive"],
+          "options": {
+            "jestConfig": "libs/web/angular/shared/directive/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/web/angular/shared/directive/src/**/*.ts",
+              "libs/web/angular/shared/directive/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
     "web-react": {
       "root": "apps/web/react",
       "sourceRoot": "apps/web/react/src",
