@@ -1,0 +1,52 @@
+:root {
+    --primary : #06d6a0ff;
+    --secondary : #06d6a000;
+    --light : rgb(144, 189, 176);
+}
+
+.wrapper{
+    padding: 5rem;
+}
+
+
+
+/* pulse spinner css */
+
+.pulse {
+    width: 20px;
+    height: 20px;
+    background-color: var(--primary);
+    border-radius: 50%;
+   animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    from {
+        box-shadow: var(--primary) 0 0 0 0;
+    }
+
+    to {
+        box-shadow: var(--secondary) 0 0 0 12px;
+    }
+}
+
+
+/* border spinner css */
+
+.spinner {
+    width: 20px;
+    height: 20px;
+
+    border: solid var(--light) 4px;
+
+    border-radius: 50%;
+    border-top-color: var(--primary);
+
+    animation: spin 2s infinite linear;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
