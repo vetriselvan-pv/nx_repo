@@ -29,40 +29,38 @@
       }
     ]
   },
-  "projects": {
-    "mobile-ionic-angular": {
-      "tags": []
+  "cli": {
+    "defaultCollection": "@nxtend/ionic-angular"
+  },
+  "generators": {
+    "@nrwl/angular:application": {
+      "style": "scss",
+      "linter": "eslint",
+      "unitTestRunner": "jest",
+      "e2eTestRunner": "cypress"
     },
-    "mobile/ionic-angular-e2e": {
-      "tags": [],
-      "implicitDependencies": ["mobile-ionic-angular"]
+    "@nrwl/angular:library": {
+      "style": "scss",
+      "linter": "eslint",
+      "unitTestRunner": "jest"
     },
-    "web-angular": {
-      "tags": []
+    "@nrwl/angular:component": {
+      "style": "scss"
     },
-    "web-angular-shared-component": {
-      "tags": []
-    },
-    "web-angular-shared-directive": {
-      "tags": []
-    },
-    "web-react": {
-      "tags": []
-    },
-    "web-vue": {
-      "tags": []
-    },
-    "web-vue-e2e": {
-      "tags": [],
-      "implicitDependencies": ["web-vue"]
-    },
-    "web/angular-e2e": {
-      "tags": [],
-      "implicitDependencies": ["web-angular"]
-    },
-    "web/react-e2e": {
-      "tags": [],
-      "implicitDependencies": ["web-react"]
+    "@nrwl/react": {
+      "application": {
+        "style": "scss",
+        "linter": "eslint",
+        "babel": true
+      },
+      "component": {
+        "style": "scss"
+      },
+      "library": {
+        "style": "scss",
+        "linter": "eslint"
+      }
     }
-  }
+  },
+  "defaultProject": "mobile-ionic-angular"
 }
