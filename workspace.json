@@ -91,7 +91,8 @@
               "apps/mobile/ionic-angular/src/**/*.ts",
               "apps/mobile/ionic-angular/src/**/*.html"
             ]
-          }
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
@@ -182,7 +183,8 @@
             }
           }
         }
-      }
+      },
+      "tags": []
     },
     "mobile/ionic-angular-e2e": {
       "root": "apps/mobile/ionic-angular-e2e",
@@ -206,9 +208,12 @@
           "executor": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": ["apps/mobile/ionic-angular-e2e/**/*.{js,ts}"]
-          }
+          },
+          "outputs": ["{options.outputFile}"]
         }
-      }
+      },
+      "tags": [],
+      "implicitDependencies": ["mobile-ionic-angular"]
     },
     "web-angular": {
       "projectType": "application",
@@ -291,7 +296,8 @@
               "apps/web/angular/src/**/*.ts",
               "apps/web/angular/src/**/*.html"
             ]
-          }
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
@@ -301,7 +307,8 @@
             "passWithNoTests": true
           }
         }
-      }
+      },
+      "tags": []
     },
     "web-angular-shared-component": {
       "projectType": "library",
@@ -324,9 +331,11 @@
               "libs/web/angular/shared/component/src/**/*.ts",
               "libs/web/angular/shared/component/src/**/*.html"
             ]
-          }
+          },
+          "outputs": ["{options.outputFile}"]
         }
-      }
+      },
+      "tags": []
     },
     "web-angular-shared-directive": {
       "projectType": "library",
@@ -349,9 +358,11 @@
               "libs/web/angular/shared/directive/src/**/*.ts",
               "libs/web/angular/shared/directive/src/**/*.html"
             ]
-          }
+          },
+          "outputs": ["{options.outputFile}"]
         }
-      }
+      },
+      "tags": []
     },
     "web-react": {
       "root": "apps/web/react",
@@ -417,7 +428,8 @@
           "executor": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": ["apps/web/react/**/*.{ts,tsx,js,jsx}"]
-          }
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
@@ -427,7 +439,8 @@
             "passWithNoTests": true
           }
         }
-      }
+      },
+      "tags": []
     },
     "web-vue": {
       "projectType": "application",
@@ -469,7 +482,8 @@
           "executor": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": ["apps/web/vue/**/*.{ts,tsx,vue}"]
-          }
+          },
+          "outputs": ["{options.outputFile}"]
         },
         "test": {
           "executor": "@nrwl/jest:jest",
@@ -479,7 +493,8 @@
             "passWithNoTests": true
           }
         }
-      }
+      },
+      "tags": []
     },
     "web-vue-e2e": {
       "root": "apps/web/vue-e2e",
@@ -503,9 +518,12 @@
           "executor": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": ["apps/web/vue-e2e/**/*.{js,ts}"]
-          }
+          },
+          "outputs": ["{options.outputFile}"]
         }
-      }
+      },
+      "tags": [],
+      "implicitDependencies": ["web-vue"]
     },
     "web/angular-e2e": {
       "root": "apps/web/angular-e2e",
@@ -529,9 +547,12 @@
           "executor": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": ["apps/web/angular-e2e/**/*.{js,ts}"]
-          }
+          },
+          "outputs": ["{options.outputFile}"]
         }
-      }
+      },
+      "tags": [],
+      "implicitDependencies": ["web-angular"]
     },
     "web/react-e2e": {
       "root": "apps/web/react-e2e",
@@ -555,43 +576,12 @@
           "executor": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": ["apps/web/react-e2e/**/*.{js,ts}"]
-          }
+          },
+          "outputs": ["{options.outputFile}"]
         }
-      }
-    }
-  },
-  "cli": {
-    "defaultCollection": "@nxtend/ionic-angular"
-  },
-  "generators": {
-    "@nrwl/angular:application": {
-      "style": "scss",
-      "linter": "eslint",
-      "unitTestRunner": "jest",
-      "e2eTestRunner": "cypress"
-    },
-    "@nrwl/angular:library": {
-      "style": "scss",
-      "linter": "eslint",
-      "unitTestRunner": "jest"
-    },
-    "@nrwl/angular:component": {
-      "style": "scss"
-    },
-    "@nrwl/react": {
-      "application": {
-        "style": "scss",
-        "linter": "eslint",
-        "babel": true
       },
-      "component": {
-        "style": "scss"
-      },
-      "library": {
-        "style": "scss",
-        "linter": "eslint"
-      }
+      "tags": [],
+      "implicitDependencies": ["web-react"]
     }
-  },
-  "defaultProject": "mobile-ionic-angular"
+  }
 }
