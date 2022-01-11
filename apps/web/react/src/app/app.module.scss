@@ -1,0 +1,74 @@
+@function toVw($val) {
+  @return calc(100vh - $val);
+}
+
+.wrapper {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+
+  .header_bg {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .nav_bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .title_block {
+    position: relative;
+    top: 0;
+
+    .name_text {
+      position: absolute;
+      left: 110.5px;
+      top: tovw(335.5px);
+      font-style: normal;
+      font-weight: 800;
+      font-size: 38px;
+      line-height: 43px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .job_role {
+      position: absolute;
+      left: 106.5px;
+      top: tovw(394.5px);
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 27px;
+      color: #fff;
+    }
+  }
+}
