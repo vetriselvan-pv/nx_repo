@@ -15,7 +15,8 @@
     "strict": true,
     "noImplicitReturns": true,
     "strictPropertyInitialization": false,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true
   },
   "angularCompilerOptions": {
     "strictInjectionParameters": true,
