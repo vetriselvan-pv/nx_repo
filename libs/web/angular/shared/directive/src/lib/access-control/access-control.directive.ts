@@ -4,8 +4,8 @@ import { Directive, ElementRef, Input, OnInit } from '@angular/core'
   selector: '[pvsAccessControl]',
 })
 export class AccessControlDirective implements OnInit {
-  @Input() moduleType: string
-  @Input() accessType: string
+  @Input() moduleType = ''
+  @Input() accessType = ''
 
   //auth service need to inject
 

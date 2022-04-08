@@ -39,3 +39,5 @@ testem.log
 Thumbs.debug
 
 package-lock.json
+
+/.angular
