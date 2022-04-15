@@ -15,11 +15,20 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@pvs/shared/interface": ["libs/shared/interface/src/index.ts"],
+      "@pvs/shared/js/utils": ["libs/shared/js/utils/src/index.ts"],
+      "@pvs/shared/service/utils": ["libs/shared/service/utils/src/index.ts"],
       "@pvs/web/angular/shared/component": [
         "libs/web/angular/shared/component/src/index.ts"
       ],
       "@pvs/web/angular/shared/directive": [
         "libs/web/angular/shared/directive/src/index.ts"
+      ],
+      "@pvs/web/angular/shared/pipes": [
+        "libs/web/angular/shared/pipes/src/index.ts"
+      ],
+      "@pvs/web/angular/shared/service": [
+        "libs/web/angular/shared/service/src/index.ts"
       ]
     }
   },
