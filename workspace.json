@@ -215,6 +215,52 @@
       "tags": [],
       "implicitDependencies": ["mobile-ionic-angular"]
     },
+    "shared-interface": {
+      "root": "libs/shared/interface",
+      "sourceRoot": "libs/shared/interface/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/shared/interface/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared/interface"],
+          "options": {
+            "jestConfig": "libs/shared/interface/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    },
+    "shared-js-utils": {
+      "root": "libs/shared/js/utils",
+      "sourceRoot": "libs/shared/js/utils/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/shared/js/utils/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/shared/js/utils"],
+          "options": {
+            "jestConfig": "libs/shared/js/utils/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    },
     "web-angular": {
       "projectType": "application",
       "root": "apps/web/angular",
@@ -360,6 +406,58 @@
             ]
           },
           "outputs": ["{options.outputFile}"]
+        }
+      },
+      "tags": []
+    },
+    "web-angular-shared-pipes": {
+      "projectType": "library",
+      "root": "libs/web/angular/shared/pipes",
+      "sourceRoot": "libs/web/angular/shared/pipes/src",
+      "prefix": "pvs",
+      "targets": {
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/web/angular/shared/pipes"],
+          "options": {
+            "jestConfig": "libs/web/angular/shared/pipes/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/web/angular/shared/pipes/src/**/*.ts",
+              "libs/web/angular/shared/pipes/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "web-angular-shared-service": {
+      "projectType": "library",
+      "root": "libs/web/angular/shared/service",
+      "sourceRoot": "libs/web/angular/shared/service/src",
+      "prefix": "pvs",
+      "targets": {
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/web/angular/shared/service"],
+          "options": {
+            "jestConfig": "libs/web/angular/shared/service/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/web/angular/shared/service/src/**/*.ts",
+              "libs/web/angular/shared/service/src/**/*.html"
+            ]
+          }
         }
       },
       "tags": []
