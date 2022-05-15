@@ -356,6 +356,29 @@
       },
       "tags": []
     },
+    "web-angular-shared-class": {
+      "root": "libs/web/angular/shared/class",
+      "sourceRoot": "libs/web/angular/shared/class/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/web/angular/shared/class/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/web/angular/shared/class"],
+          "options": {
+            "jestConfig": "libs/web/angular/shared/class/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    },
     "web-angular-shared-component": {
       "projectType": "library",
       "root": "libs/web/angular/shared/component",
@@ -406,6 +429,32 @@
             ]
           },
           "outputs": ["{options.outputFile}"]
+        }
+      },
+      "tags": []
+    },
+    "web-angular-shared-generic-component": {
+      "projectType": "library",
+      "root": "libs/web/angular/shared/generic-component",
+      "sourceRoot": "libs/web/angular/shared/generic-component/src",
+      "prefix": "pvs",
+      "targets": {
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/web/angular/shared/generic-component"],
+          "options": {
+            "jestConfig": "libs/web/angular/shared/generic-component/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/web/angular/shared/generic-component/src/**/*.ts",
+              "libs/web/angular/shared/generic-component/src/**/*.html"
+            ]
+          }
         }
       },
       "tags": []

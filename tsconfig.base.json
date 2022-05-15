@@ -24,6 +24,9 @@
       "@pvs/web/angular/shared/directive": [
         "libs/web/angular/shared/directive/src/index.ts"
       ],
+      "@pvs/web/angular/shared/generic-component": [
+        "libs/web/angular/shared/generic-component/src/index.ts"
+      ],
       "@pvs/web/angular/shared/pipes": [
         "libs/web/angular/shared/pipes/src/index.ts"
       ],

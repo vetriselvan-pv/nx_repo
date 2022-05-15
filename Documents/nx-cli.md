@@ -13,3 +13,7 @@ nx g @nrwl/react:lib ui
 # Add a component
 
 nx g @nrwl/react:component xyz --project ui
+
+# Generate nx workspace lib
+
+nx g @nrwl/workspace:lib /lib-name/ --directory=/path/
