@@ -1,0 +1,72 @@
+<!-- <div class="d-flex flex-column">
+  <div
+    class="float-form-group"
+    [ngClass]="[
+      !!control.errors && control.touched ? 'float-form-invalid' : 'float-form-valid',
+      control.disabled ? 'float-form-disabled' : ''
+    ]"
+  >
+    <input
+      class="float-form-control"
+      [type]="type"
+      [id]="id"
+      [formControl]="control"
+      [placeholder]="placeholder"
+    />
+    <label
+      [ngClass]="[
+        !!control.errors && control.touched ? 'label-invalid' : 'label-valid',
+        control.disabled ? 'label-disabled' : '',
+        requiredField ? 'required' : ''
+      ]"
+      [for]="id"
+      >{{ !!label ? label : placeholder }}</label
+    >
+  </div>
+  <div class="d-flex flex-column content-wrapper">
+    <ng-container *ngIf="!!control.errors && control.touched && validationSchema.length > 0">
+      <ng-container *ngFor="let schema of validationSchema">
+        <small *ngIf="control.hasError(schema.name) && control.touched " class="field-error-text text-wrap">{{schema.message}}</small>
+      </ng-container>
+    </ng-container>
+    <small class="float-form-description text-wrap">
+      <span class="fst-italic" *ngIf="optionalText">{{ optionalText }}.</span>
+      {{ description }}
+    </small>
+  </div>
+</div> -->
+
+<div>
+  <p
+    [ngClass]="[
+      !!control.errors && control.touched ? 'label-invalid' : 'label-valid',
+      control.disabled ? 'label-disabled' : '',
+      requiredField ? 'required' : ''
+    ]"
+    class="mb-2"
+  >
+    {{ label }}
+  </p>
+  <div class="input-group input-group-lg">
+    <input
+      [ngClass]="!!control.errors && control.touched ? 'is-invalid' : ''"
+      class="form-control"
+      [type]="type"
+      [id]="id"
+      [formControl]="control"
+      [placeholder]="placeholder ? placeholder : ''"
+    />
+  </div>
+
+  <ng-container
+    *ngIf="!!control.errors && control.touched && validationSchema.length > 0"
+  >
+    <ng-container *ngFor="let schema of validationSchema">
+      <small
+        *ngIf="control.hasError(schema.name)"
+        class="field-error-text text-wrap"
+        >{{ schema.message }}</small
+      >
+    </ng-container>
+  </ng-container>
+</div>
