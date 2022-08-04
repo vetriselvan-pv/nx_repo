@@ -1,0 +1,35 @@
+/**  input variables */
+
+$inputTextColor: #090a0a;
+$inputPadding: 16px;
+$inputBorderRadius: 8px;
+
+/* Input Border */
+$inputBorder: 1px solid #e3e5e6;
+$inputFocusBorder: 2px solid #6b4eff;
+$inputErrorBorder: 2px solid #ff5247;
+$inputDisableBorder: 1px solid #f2f4f5;
+
+/* Input Label */
+$inputLabelColor: #090a0a;
+$inputLabelFontFamily: 'Inter';
+$inputLabelFontStyle: normal;
+$inputLabelFontWeight: 500;
+$inputLabelFontSize: 16px;
+$inputLabelFineHeight: 16px;
+
+/* Input Hint */
+$inputHintColor: #72777a;
+$inputHintFontFamily: 'Inter';
+$inputHintFontStyle: normal;
+$inputHintFontWeight: 400;
+$inputHintFontSize: 14px;
+$inputHintLineHeight: 20px;
+
+/* Input Error */
+$inputErrorColor: #ff5247;
+$inputErrorFontFamily: 'Inter';
+$inputErrorFontStyle: normal;
+$inputErrorFontWeight: 400;
+$inputErrorFontSize: 14px;
+$inputErrorLineHeight: 20px;

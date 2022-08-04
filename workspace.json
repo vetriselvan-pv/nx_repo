@@ -1,6 +1,141 @@
 {
   "version": 2,
   "projects": {
+    "lib-react-form-components": {
+      "root": "libs/lib/react/form-components",
+      "sourceRoot": "libs/lib/react/form-components/src",
+      "projectType": "library",
+      "tags": [],
+      "targets": {
+        "build": {
+          "executor": "@nrwl/web:rollup",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/lib/react/form-components",
+            "tsConfig": "libs/lib/react/form-components/tsconfig.lib.json",
+            "project": "libs/lib/react/form-components/package.json",
+            "entryFile": "libs/lib/react/form-components/src/index.ts",
+            "external": ["react/jsx-runtime"],
+            "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+            "compiler": "babel",
+            "assets": [
+              {
+                "glob": "libs/lib/react/form-components/README.md",
+                "input": ".",
+                "output": "."
+              }
+            ]
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": [
+              "libs/lib/react/form-components/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/lib/react/form-components"],
+          "options": {
+            "jestConfig": "libs/lib/react/form-components/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "lib-react-react-hook": {
+      "root": "libs/lib/react/react-hook",
+      "sourceRoot": "libs/lib/react/react-hook/src",
+      "projectType": "library",
+      "tags": [],
+      "targets": {
+        "build": {
+          "executor": "@nrwl/web:rollup",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/lib/react/react-hook",
+            "tsConfig": "libs/lib/react/react-hook/tsconfig.lib.json",
+            "project": "libs/lib/react/react-hook/package.json",
+            "entryFile": "libs/lib/react/react-hook/src/index.ts",
+            "external": ["react/jsx-runtime"],
+            "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+            "compiler": "babel",
+            "assets": [
+              {
+                "glob": "libs/lib/react/react-hook/README.md",
+                "input": ".",
+                "output": "."
+              }
+            ]
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": [
+              "libs/lib/react/react-hook/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/lib/react/react-hook"],
+          "options": {
+            "jestConfig": "libs/lib/react/react-hook/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "lib-react-react-notify-toast": {
+      "root": "libs/lib/react/react-notify-toast",
+      "sourceRoot": "libs/lib/react/react-notify-toast/src",
+      "projectType": "library",
+      "tags": [],
+      "targets": {
+        "build": {
+          "executor": "@nrwl/web:rollup",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/lib/react/react-notify-toast",
+            "tsConfig": "libs/lib/react/react-notify-toast/tsconfig.lib.json",
+            "project": "libs/lib/react/react-notify-toast/package.json",
+            "entryFile": "libs/lib/react/react-notify-toast/src/index.ts",
+            "external": ["react/jsx-runtime"],
+            "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+            "compiler": "babel",
+            "assets": [
+              {
+                "glob": "libs/lib/react/react-notify-toast/README.md",
+                "input": ".",
+                "output": "."
+              }
+            ]
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": [
+              "libs/lib/react/react-notify-toast/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/lib/react/react-notify-toast"],
+          "options": {
+            "jestConfig": "libs/lib/react/react-notify-toast/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "mobile-ionic-angular": {
       "projectType": "application",
       "root": "apps/mobile/ionic-angular",
